@@ -1,4 +1,4 @@
 venv/
 .DS_Store/
 flash_cards/__pycache__/
-data/words_to_learn.csv
+flash_cards/data/words_to_learn.csv
