@@ -3,16 +3,17 @@ import random
 
 
 class Words:
-    # Initializer
+    # Constructor
     def __init__(self):
         self.current_word = None
         self.word_list = self.words_load()
+        self.flip_timer = None
 
     # Load the words from files
     def words_load(self):
         try:
             data = pandas.read_csv("./flash_cards/data/words_to_learn.csv")
-        except:
+        except FileNotFoundError:
             data = pandas.read_csv("./flash_cards/data/french_words.csv")
             data.to_csv("./flash_cards/data/words_to_learn.csv", index=False)
             data = pandas.read_csv("./flash_cards/data/words_to_learn.csv")
