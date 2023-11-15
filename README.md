@@ -7,7 +7,7 @@ The French Word Flash Cards application is an interactive learning tool designed
 ## Instalation Guide:
 
 1. Create virtual env
-2. Run pip install -r requirements.txt
+2. Run `pip install -r requirements.txt`
 3. Run the code
 
 ## Technologies:
