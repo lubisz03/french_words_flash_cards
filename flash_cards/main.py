@@ -70,8 +70,8 @@ window.configure(background=BACKGROUND_COLOR, padx=50, pady=50)
 
 # Set up the flash card
 card = tkinter.Canvas(height=526, width=800)
-bg_front = tkinter.PhotoImage(file="./images/card_front.png")
-bg_back = tkinter.PhotoImage(file="./images/card_back.png")
+bg_front = tkinter.PhotoImage(file="./flash_cards/images/card_front.png")
+bg_back = tkinter.PhotoImage(file="./flash_cards/images/card_back.png")
 
 card_img = card.create_image(400, 263, image=bg_front)
 card_title = card.create_text(400, 150, text="Title", font=(
@@ -84,8 +84,8 @@ card.grid(column=0, row=0, columnspan=3)
 
 
 # Buttons
-btn_wrong_img = tkinter.PhotoImage(file="./images/wrong.png")
-btn_right_img = tkinter.PhotoImage(file="./images/right.png")
+btn_wrong_img = tkinter.PhotoImage(file="./flash_cards/images/wrong.png")
+btn_right_img = tkinter.PhotoImage(file="./flash_cards/images/right.png")
 
 btn_wrong = tkinter.Button(
     image=btn_wrong_img, highlightthickness=0, border=0, command=handle_new_word)
